@@ -1,0 +1,155 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+
+\title[Introducción]{\bf\Huge David Cheriton}
+\subtitle{Interacción Humano Computador}
+
+\author[grupoIHC]
+{
+	Alex Chaco Huamani \inst{1}
+	Renato Eduardo Delgado Huacallo \inst{2}\\
+	Christian Wilfredo Ilachoque Hanccoccallo \inst{3}
+	Luis Fernando quispe puma \inst{4}
+}
+\institute[UNSA]
+{
+\inst{1}% 
+Escuela Profesional de Ingenieria de Sistemas\\
+Facultad de Producción y Servicio\\
+Universidad Nacional San Agustín de Arequipa
+}
+
+\date[2020-09-09]{\scriptsize{2020-09-14}}
+%\logo{\includegraphics[width=3.0cm]{logo_unsa.jpg}}
+\titlegraphic{\includegraphics[width=1.0cm]{logo_unsa.jpg}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Content}
+\tableofcontents
+\end{frame}
+
+\section{¿Quién es David Cheriton?}
+\begin{frame}
+\frametitle{¿Quién es David Cheriton?}
+\centering
+\includegraphics[width=0.2\textwidth]{cheriton.jpg}
+\begin{itemize}
+\item Es un informático canadiense, matemático, empresario multimillonario, filántropo y capitalista de riesgo. Es profesor de informática en la Universidad de Stanford , [1] donde fundó y dirige el Grupo de Sistemas Distribuidos.
+\item Es un experto en computación distribuida y redes de computadoras.
+
+
+\end{itemize}
+\end{frame}
+
+\section{Diseño De Interfaz Hombre-máquina Para Sistemas De Tiempo Compartido}
+\begin{frame}
+\frametitle{Diseño De Interfaz Hombre-máquina Para Sistemas De Tiempo Compartido}
+\begin{itemize}
+
+\item David Cheriton propuso directrices de diseño de interfaz de usuario para los primeros sistemas informáticos interactivos (tiempo compartido).
+
+\end{itemize}
+\end{frame}
+
+\section{Sistemas de Tiempo Compartido}
+\begin{frame}
+\frametitle{Sistemas de Tiempo Compartido}
+\begin{itemize}
+\item  Al sistema de tiempo compartido se refiere a un sistema informático que puede utilizarse en línea(conversacionalmente), y que proporciona la base, herramientas para la construcción, mantenimiento y uso de programa de propósito especial.
+
+\end{itemize}
+\end{frame}
+
+
+\section{Propiedades Para El Entorno De Interfaz}
+\begin{frame}
+\frametitle{Propiedades Para El Entorno De Interfaz}
+\begin{itemize}
+\item Simple: Proyectar una imagen "virtual" "natural" y sin complicaciones del sistema 
+\item Sensible: Responder de forma rápida y significativa a los comandos del usuario.
+\item Controlado por el usuario: todas las acciones son iniciadas y controladas por el usuario.
+\item Flexible: flexibilidad en la estructura de mando y tolerancia a errores.
+\item Estable: capaz de detectar las dificultades del usuario y ayudarlo a volver al diálogo correcto; nunca "interrumpe" al usuario
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Propiedades Para El Entorno De Interfaz}
+\begin{itemize}
+\item Protector: proteger al usuario de errores o accidentes costosos, por ejemplo, sobrescribir un archivo.
+\item Autodocumentación: Los comandos y las respuestas del sistema son autoexplicativos y la documentación, las explicaciones o el material tutorial forman parte del entorno.
+\item Confiable: no conduce a errores no detectados en la comunicación hombre-computadora.
+\item Modificable por el usuario: los usuarios sofisticados pueden personalizar su entorno.
+
+\end{itemize}
+\end{frame}
+
+
+
+\section{Referencias}
+\begin{frame}
+\frametitle{Referencias}
+\begin{itemize}
+\item Cheriton, D. R. (1976). Man–machine interface design for time-sharing systems. Proceedings of the ACM National Conference, 362–380.
+\end{itemize}
+\end{frame}
+
+
+\end{document}
