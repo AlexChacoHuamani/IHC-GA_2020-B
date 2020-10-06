@@ -1,0 +1,287 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+
+\title[]{\bf\Huge Taller: Experiencia de usuario en portales web}
+\subtitle{Interacción Humano Computador}
+
+\author[grupoIHC]
+{
+	Alex Chaco Huamani \inst{1}
+	Renato Eduardo Delgado Huacallo \inst{2}
+	Christian Wilfredo Ilachoque Hanccoccallo \inst{3}
+	Luis Fernando quispe puma \inst{4}
+}
+\institute[UNSA]
+{
+\inst{1}% 
+Escuela Profesional de Ingenieria de Sistemas\\
+Facultad de Producción y Servicio\\
+Universidad Nacional San Agustín de Arequipa
+}
+
+\date[2020-10-06]{\scriptsize{2020-10-06}}
+%\logo{\includegraphics[width=3.0cm]{logo_unsa.jpg}}
+\titlegraphic{\includegraphics[width=1.0cm]{logo_unsa.jpg}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Contenido}
+\tableofcontents
+\end{frame}
+
+\section{Introducción}
+
+\begin{frame}
+\frametitle{Introducción}
+\centering
+\includegraphics[width=1\textwidth]{w_g_1.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introducción}
+\centering
+\includegraphics[width=1\textwidth]{w_g_2.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introducción}
+\centering
+ Apple es una de las empresas que sigue el principio "La forma sigue la función".
+\includegraphics[width=1\textwidth]{apple.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introducción}
+\centering
+\includegraphics[width=0.5\textwidth]{user_rey.png}\\
+{\LARGE USUARIO}
+\end{frame}
+
+\section{ACCESIBILIDAD}
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Información Oculta}
+\centering
+\includegraphics[width=1\textwidth]{oculta.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Popups Escudos de información}
+\centering
+\includegraphics[width=1\textwidth]{popup.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Navegación Oculta}
+\centering
+\includegraphics[width=1\textwidth]{nav.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Navegación Oculta}
+\centering
+\includegraphics[width=1\textwidth]{nav2.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Heros Rotativos}
+\centering
+\includegraphics[width=1\textwidth]{rotativos.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Falta de Contraste}
+\centering
+\includegraphics[width=1\textwidth]{contraste.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Falta de Contraste}
+\centering
+\includegraphics[width=1\textwidth]{rgb.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{ACCESIBILIDAD-Falta de Proposito}
+\begin{itemize}
+\item Los dueños, por supuesto, también tienen objetivos al crear un sitio web. O al menos, deberían de tenerlos, y muy claros.
+\end{itemize}
+\end{frame}
+
+\section{NAVEGACIÓN}
+
+\begin{frame}{NAVEGACIÓN-Sobrecarga de Menús}
+\includegraphics[width=10cm]{UiB-images/1.png}
+\end{frame}
+\begin{frame}{NAVEGACIÓN-Mega Menú}
+\includegraphics[width=10cm]{UiB-images/2.png}
+\end{frame}
+\begin{frame}{NAVEGACIÓN-Breadcrumb}
+\includegraphics[width=10cm]{UiB-images/3.jpg}
+\end{frame}
+\begin{frame}{NAVEGACIÓN-The Hamburguer Menú}
+\textbf{Tab Bar}        \textbf{ ---------------------------------- } \textbf{Menus Progresivos Colapsados}
+\includegraphics[width=5cm]{UiB-images/4.jpg}\textbf{-----------}\includegraphics[width=5cm]{UiB-images/5.jpg}
+\end{frame}
+
+\section{CONTENIDOS}
+\begin{frame}
+\frametitle{CONTENIDOS - Mito: Las Personas No Scrollean}
+\includegraphics[width=12.0cm]{img/scroll1.PNG}
+\includegraphics[width=12.0cm]{img/scroll2.PNG}
+\includegraphics[width=12.0cm]{img/scroll3.PNG}
+
+\end{frame}
+\begin{frame}
+\frametitle{CONTENIDOS - Mito: Las Personas No Scrollean}
+\centering Método Acordeon
+\begin{figure}
+    \includegraphics[width=0.3\textwidth]{img/acordeon1.PNG}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{CONTENIDOS - Above The Fold}
+\begin{figure}
+    \includegraphics[width=0.6\textwidth]{img/above-the-fold.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{CONTENIDOS - Contenido en Blanco}
+\begin{figure}
+    \includegraphics[width=0.9\textwidth]{img/Espacio-en-blanco.PNG}
+\end{figure}
+
+\end{frame}
+\begin{frame}
+\frametitle{CONTENIDOS - Contenido en Blanco MACRO}
+\begin{figure}
+    \includegraphics[width=0.65\textwidth]{img/Espacio-en-blanco-MACRO.PNG}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{CONTENIDOS - Contenido en Blanco Micro}
+\begin{figure}
+    \includegraphics[width=0.9\textwidth]{img/Espacio-en-blanco-micro.PNG}
+\end{figure}
+\end{frame}
+
+
+\section{TEXTOS}
+\begin{frame}
+\frametitle{TEXTOS - Jerarquías}
+\centering
+\begin{itemize}
+\item Siempre hay que tener en cuenta las jerarquías del tamaño del texto (título, subtítulo, etc.)\\
+\centering
+\includegraphics[width=0.4\textwidth]{img1.jpg}
+
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{TEXTOS - Alineación justificada vs Alineación a la izquierda}
+\begin{itemize}
+
+\item Por un lado la alineación justificada hace ver el contenido mucho más ordenado.
+\item Por otro lado la alineación justificada hace que a veces exista un mayor espacio entre las palabras y puede causar cansancio visual.\\
+\centering
+\includegraphics[width=0.7\textwidth]{img2.jpg}
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{TEXTOS - Ancho de lineal ideal}
+\begin{itemize}
+\item  Es recomendable usar enrte 60 a 70 carcteres por línea.\\
+\centering
+\includegraphics[width=0.7\textwidth]{img3.jpg}
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{TEXTOS - Mayúsculas y Minúsculas}
+\begin{itemize}
+\item Hay que tener en cuenta que usamos las mayúsculas lo que se quiere resaltar.\\
+\centering
+\includegraphics[width=0.6\textwidth]{img4.jpg}
+
+\end{itemize}
+\end{frame}
+
+
+\section{Referencias}
+\begin{frame}
+\frametitle{Referencias}
+\begin{itemize}
+\item HIC 2020 [HCI 2020]. (2020,09,20). Taller: Experiencia de usuario en portales web - HCI 2020 [Archivo de video]. Recuperado de https://www.youtube.com/watch?v=nNx2T-yU0NI
+\item Hassan Montero, Y. (2002). Cómo leen los usuarios en la Web. No sólo usabilidad, (1).
+\end{itemize}
+\end{frame}
+
+
+\end{document}
